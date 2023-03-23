@@ -1,0 +1,34 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_login_yandex (0.0.1):
+    - Flutter
+    - YandexLoginSDK
+  - YandexLoginSDK (2.1.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_login_yandex (from `.symlinks/plugins/flutter_login_yandex/ios`)
+  - YandexLoginSDK (from `https://github.com/spChief/yandex-login-sdk-ios`, branch `master`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_login_yandex:
+    :path: ".symlinks/plugins/flutter_login_yandex/ios"
+  YandexLoginSDK:
+    :branch: master
+    :git: https://github.com/spChief/yandex-login-sdk-ios
+
+CHECKOUT OPTIONS:
+  YandexLoginSDK:
+    :commit: e9bebfb782eeef2b1ee7968cc6c3fcb7a898133a
+    :git: https://github.com/spChief/yandex-login-sdk-ios
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_login_yandex: 5e657ff3601e389b704caa6bbbdf618ced470bae
+  YandexLoginSDK: cec22fc509343c519ee31b62b38acc1753a78123
+
+PODFILE CHECKSUM: 44845b96794faba32d829f5d4c2df16c3847c29a
+
+COCOAPODS: 1.11.3
