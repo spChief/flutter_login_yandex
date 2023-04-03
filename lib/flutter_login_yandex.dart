@@ -1,4 +1,3 @@
-
 import 'flutter_login_yandex_platform_interface.dart';
 
 class FlutterLoginYandex {

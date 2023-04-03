@@ -11,7 +11,8 @@ class MethodChannelFlutterLoginYandex extends FlutterLoginYandexPlatform {
 
   @override
   Future<Map<Object?, Object?>?> signIn() async {
-    final version = await methodChannel.invokeMethod<Map<Object?, Object?>>('signIn');
+    final version =
+        await methodChannel.invokeMethod<Map<Object?, Object?>>('signIn');
     return version;
   }
 }

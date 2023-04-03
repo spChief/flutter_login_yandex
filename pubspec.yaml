@@ -1,6 +1,6 @@
 name: flutter_login_yandex
-description: Login via Yandex OAuth
-version: 0.0.1
+description: Flutter plugin for authorization with Yandex LoginSDK for iOS and Android
+version: 0.0.2
 homepage: https://github.com/spChief/flutter_login_yandex
 repository: https://github.com/spChief/flutter_login_yandex
 issue_tracker: https://github.com/spChief/flutter_login_yandex/issues
