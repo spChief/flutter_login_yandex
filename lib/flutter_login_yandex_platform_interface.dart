@@ -24,6 +24,10 @@ abstract class FlutterLoginYandexPlatform extends PlatformInterface {
   }
 
   Future<Map<Object?, Object?>?> signIn() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+    throw UnimplementedError('signIn() has not been implemented.');
+  }
+
+  Future<Map<Object?, Object?>?> signOut() {
+    throw UnimplementedError('signOut() has not been implemented.');
   }
 }

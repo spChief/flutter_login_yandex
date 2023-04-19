@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_login_yandex/flutter_login_yandex.dart';
 
@@ -34,7 +36,6 @@ class _MyAppState extends State<MyApp> {
               Text('Token: $_token\n', textAlign: TextAlign.center),
               InkWell(
                 onTap: () async {
-                  // await _flutterLoginYandexPlugin.getPlatformVersion();
                   final response = await _flutterLoginYandexPlugin.signIn();
                   if (response != null) {
                     setState(() {
@@ -48,6 +49,16 @@ class _MyAppState extends State<MyApp> {
                 },
                 child: const Padding(padding: EdgeInsets.all(15), child: Text('Press')),
               ),
+              if (Platform.isIOS)
+                InkWell(
+                  onTap: () async {
+                    final response = await _flutterLoginYandexPlugin.signOut();
+                    setState(() {
+                      _token = '';
+                    });
+                  },
+                  child: const Padding(padding: EdgeInsets.all(15), child: Text('Sign Out')),
+                ),
             ],
           ),
         ),

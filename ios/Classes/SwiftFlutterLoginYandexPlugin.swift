@@ -5,6 +5,7 @@ import YandexLoginSDK
 /// Plugin methods.
 enum PluginMethod: String {
     case signIn
+    case signOut
 }
 
 enum InitSdkArg: String {
@@ -38,6 +39,8 @@ public class SwiftFlutterLoginYandexPlugin: NSObject, FlutterPlugin {
         switch method {
         case .signIn:
             logIn(result: result)
+        case .signOut:
+            logOut(result: result)
         }
     }
 
@@ -55,6 +58,11 @@ public class SwiftFlutterLoginYandexPlugin: NSObject, FlutterPlugin {
     private func logIn(result: @escaping FlutterResult) {
         _loginDelegate.startLogin(result: result)
         YXLSdk.shared.authorize()
+    }
+    
+    private func logOut(result: @escaping FlutterResult) {
+        YXLSdk.shared.logout()
+        result(nil)
     }
 }
 

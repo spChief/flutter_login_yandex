@@ -31,7 +31,7 @@ target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
-  pod 'YandexLoginSDK', :git => 'https://github.com/MariyanskiDev/yandex-login-sdk-ios', :branch => 'depreciation_fix'
+  pod 'YandexLoginSDK'
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
