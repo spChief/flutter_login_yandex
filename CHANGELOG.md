@@ -1,3 +1,7 @@
+## 0.0.3
+
+Add `signOut` method for ios
+
 ## 0.0.2
 
 Updated description and codestyle fixes
