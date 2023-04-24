@@ -1,3 +1,7 @@
+## 0.0.4
+
+Podspec ios version changed to 12.0 according to YandexLoginSDK
+
 ## 0.0.3
 
 Add `signOut` method for ios

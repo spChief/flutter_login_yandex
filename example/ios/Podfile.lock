@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_login_yandex (0.0.1):
+  - flutter_login_yandex (0.0.3):
     - Flutter
     - YandexLoginSDK
   - YandexLoginSDK (2.1.0)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_login_yandex: 5e657ff3601e389b704caa6bbbdf618ced470bae
+  flutter_login_yandex: d6be7c99c4f2b6c24849b6859501ffd5714f8690
   YandexLoginSDK: cec22fc509343c519ee31b62b38acc1753a78123
 
 PODFILE CHECKSUM: 64c6c72368409f32c434c4f2416c0d2ae8955466
