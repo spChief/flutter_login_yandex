@@ -9,7 +9,12 @@ class MockFlutterLoginYandexPlatform
     implements FlutterLoginYandexPlatform {
 
   @override
-  Future<String?> signIn() => Future.value('42');
+  Future<Map<Object?, Object?>?> signIn() => Future.value(<Object?, Object?>{});
+
+  @override
+  Future<Map<Object?, Object?>?> signOut() {
+    throw UnimplementedError();
+  }
 }
 
 void main() {

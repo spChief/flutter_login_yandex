@@ -1,3 +1,7 @@
+## 0.0.5
+
+iOS dependency YandexLoginSDK restricted to ~>2.1
+
 ## 0.0.4
 
 Podspec ios version changed to 12.0 according to YandexLoginSDK
