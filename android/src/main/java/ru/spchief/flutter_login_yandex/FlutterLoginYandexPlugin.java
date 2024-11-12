@@ -24,7 +24,9 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry;
 
-/** FlutterLoginYandexPlugin */
+/**
+ * FlutterLoginYandexPlugin
+ */
 public class FlutterLoginYandexPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
@@ -129,7 +131,7 @@ public class FlutterLoginYandexPlugin implements FlutterPlugin, MethodCallHandle
     private void checkAndSetPendingOperation(String method, Result result, Object data) {
       if (pendingOperation != null) {
         throw new IllegalStateException(
-                "Concurrent operations detected: " + pendingOperation.method + ", " + method);
+          "Concurrent operations detected: " + pendingOperation.method + ", " + method);
       }
       pendingOperation = new PendingOperation(method, result, data);
     }
@@ -141,6 +143,7 @@ public class FlutterLoginYandexPlugin implements FlutterPlugin, MethodCallHandle
       checkAndSetPendingOperation("signIn", result);
 
       final YandexAuthLoginOptions.Builder options = new YandexAuthLoginOptions.Builder();
+      options.setLoginType(LoginType.WEBVIEW);
       final Intent intent = sdk.createLoginIntent(options.build());
 
       getActivity().startActivityForResult(intent, REQUEST_LOGIN_SDK);
